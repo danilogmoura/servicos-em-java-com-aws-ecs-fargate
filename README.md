@@ -25,9 +25,9 @@
 
 #### 4: Introdução ao AWS CloudFormation
 
-- [ ] Introdução ao AWS CloudFormation
-- [ ] Analisando stacks, eventos, recursos e parâmetros
-- [ ] Apagando uma stack
+- [x] Introdução ao AWS CloudFormation
+- [x] Analisando stacks, eventos, recursos e parâmetros
+- [x] Apagando uma stack
 
 #### 5: Introdução ao AWS CDK
 
