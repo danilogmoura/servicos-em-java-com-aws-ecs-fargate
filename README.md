@@ -31,10 +31,10 @@
 
 #### 5: Introdução ao AWS CDK
 
-- [ ] Criação do usuário IAM para o AWS CDK
-- [ ] Instalação do AWS CDK
-- [ ] Criando o projeto com CDK
-- [ ] Entendendo a estrutura do projeto com CDK
+- [x] Criação do usuário IAM para o AWS CDK
+- [x] Instalação do AWS CDK
+- [x] Criando o projeto com CDK
+- [x] Entendendo a estrutura do projeto com CDK
 
 #### 6: Introdução ao AWS ECS com Fargate
 
