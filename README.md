@@ -53,8 +53,8 @@
 - [x] Criação do application load balancer e demais recursos
 - [x] Configuração do target group
 - [x] Criação das regras de auto-scaling
-- [ ] Deployment dos recursos com o AWS CDK
-- [ ] Analisando as stacks criadas no AWS CloudFormation
+- [x] Deployment dos recursos com o AWS CDK
+- [x] Analisando as stacks criadas no AWS CloudFormation
 
 #### 8: Monitorando o serviço criado no ECS
 
