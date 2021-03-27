@@ -40,16 +40,16 @@
 
 - [x] Arquitetura com AWS ECS e Fargate
 - [x] VPC - Virtual Private Cloud
-- [ ] Cluster
-- [ ] Task e Task definition
-- [ ] Service
-- [ ] Auto-scaling
-- [ ] ALB - Application load balancer, target group e security group
+- [x] Cluster
+- [x] Task e Task definition
+- [x] Service
+- [x] Auto-scaling
+- [x] ALB - Application load balancer, target group e security group
 
 #### 7: Deployment da aplicação no AWS ECS com Fargate
 
-- [ ] Criação da stack da VPC
-- [ ] Criação da stack do cluster com AWS CDK
+- [x] Criação da stack da VPC
+- [x] Criação da stack do cluster com AWS CDK
 - [ ] Criação do application load balancer e demais recursos
 - [ ] Configuração do target group
 - [ ] Criação das regras de auto-scaling
