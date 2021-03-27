@@ -50,7 +50,7 @@
 
 - [x] Criação da stack da VPC
 - [x] Criação da stack do cluster com AWS CDK
-- [ ] Criação do application load balancer e demais recursos
+- [x] Criação do application load balancer e demais recursos
 - [ ] Configuração do target group
 - [ ] Criação das regras de auto-scaling
 - [ ] Deployment dos recursos com o AWS CDK
