@@ -58,12 +58,12 @@
 
 #### 8: Monitorando o serviço criado no ECS
 
-- [ ] Gráficos de CPU e memória
-- [ ] Definição da tarefa
-- [ ] Service
-- [ ] Logs da aplicação no CloudWatch Insights
-- [ ] Criando e executando uma nova versão da aplicação
-- [ ] Destruindo os recursos criados
+- [x] Gráficos de CPU e memória
+- [x] Definição da tarefa
+- [x] Service
+- [x] Logs da aplicação no CloudWatch Insights
+- [x] Criando e executando uma nova versão da aplicação
+- [x] Destruindo os recursos criados
 
 #### 9: Monitorando o Application Load Balancer e seus componentes
 
