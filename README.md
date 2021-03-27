@@ -38,8 +38,8 @@
 
 #### 6: Introdução ao AWS ECS com Fargate
 
-- [ ] Arquitetura com AWS ECS e Fargate
-- [ ] VPC - Virtual Private Cloud
+- [x] Arquitetura com AWS ECS e Fargate
+- [x] VPC - Virtual Private Cloud
 - [ ] Cluster
 - [ ] Task e Task definition
 - [ ] Service
