@@ -2,8 +2,6 @@
 
 ------
 
-[Msc. Paulo Siecola](https://www.udemy.com/course/aws-ecs-fargate-java/)
-
 #### Conteúdo programático
 
 #### 1: Introdução
@@ -92,9 +90,9 @@
 
 #### 12: Publicando eventos de produtos com o AWS SNS
 
-- [ ] Arquitetura da aplicação com AWS SNS
-- [ ] Criando o tópico do SNS com AWS CDK
-- [ ] Configurando a aplicação para acessar o novo tópico
+- [x] Arquitetura da aplicação com AWS SNS
+- [x] Criando o tópico do SNS com AWS CDK
+- [x] Configurando a aplicação para acessar o novo tópico
 - [ ] Criando os modelos para representar os eventos
 - [ ] Criando o serviço para publicar eventos no AWS SNS
 - [ ] Atribuindo a permissão à tarefa do ECS para acessar o SNS

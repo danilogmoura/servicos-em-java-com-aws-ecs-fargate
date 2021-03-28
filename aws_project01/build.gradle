@@ -52,6 +52,7 @@ docker {
 }
 
 dependencies {
+    compile 'com.amazonaws:aws-java-sdk-sns:1.11.887'
     compile 'org.mariadb.jdbc:mariadb-java-client:2.7.0'
 
     implementation 'com.github.javafaker:javafaker:1.0.2'
