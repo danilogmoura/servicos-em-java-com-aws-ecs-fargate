@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "0f6ea57d-8089-4e28-91f5-744819a54cd7",
+		"name": "postman-aws",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "alter",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Product1\",\r\n    \"model\": \"Model1\",\r\n    \"code\": \"COD100\",\r\n    \"price\": 10.0,\r\n    \"color\": \"black\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://Servi-ALB01-J130MN9IHFWH-919874451.us-east-1.elb.amazonaws.com:8080/api/products/1",
+					"protocol": "http",
+					"host": [
+						"Servi-ALB01-J130MN9IHFWH-919874451",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DogFood",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://Servi-ALB01-J130MN9IHFWH-919874451.us-east-1.elb.amazonaws.com:8080/api/test/dog/food/blabla",
+					"protocol": "http",
+					"host": [
+						"Servi-ALB01-J130MN9IHFWH-919874451",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"dog",
+						"food",
+						"blabla"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Product4\",\r\n    \"model\": \"Model4\",\r\n    \"code\": \"COD4\",\r\n    \"price\": 200.0,\r\n    \"color\": \"yellow\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://Servi-ALB01-J130MN9IHFWH-919874451.us-east-1.elb.amazonaws.com:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"Servi-ALB01-J130MN9IHFWH-919874451",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://Servi-ALB01-J130MN9IHFWH-919874451.us-east-1.elb.amazonaws.com:8080/api/products/",
+					"protocol": "http",
+					"host": [
+						"Servi-ALB01-J130MN9IHFWH-919874451",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

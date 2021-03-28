@@ -1,4 +1,4 @@
-package com.dgm.aws.aws_project01.mode;
+package com.dgm.aws.aws_project01.model;
 
 
 import lombok.Builder;

@@ -1,6 +1,6 @@
 package com.dgm.aws.aws_project01.controller;
 
-import com.dgm.aws.aws_project01.mode.DogFood;
+import com.dgm.aws.aws_project01.model.DogFood;
 import com.github.javafaker.Faker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,19 +11,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/test")
-public class TestController {
+@RequestMapping("/api/dogs")
+public class DogController {
 
-    private static final Logger LOG = LoggerFactory.getLogger(TestController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(DogController.class);
 
-    @GetMapping("/dog/{name}")
+    @GetMapping("/{name}")
     public ResponseEntity<?> dogTest(@PathVariable String name) {
         LOG.info("Test controller - name: {}", name);
 
         return ResponseEntity.ok("Name: " + name);
     }
 
-    @GetMapping("/dog/food/{name}")
+    @GetMapping("/food/{name}")
     public ResponseEntity<?> dogFood(@PathVariable String name) {
         LOG.info("Name: {}", name);
 

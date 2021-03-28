@@ -83,12 +83,12 @@
 
 - [x] Arquitetura da aplicação com o AWS RDS
 - [x] Criando a instância do RDS com AWS CDK
-- [ ] Configurando a aplicação para a acessar o banco de dados
-- [ ] Criando o modelo de produtos
-- [ ] Criando o repositório de produtos
-- [ ] Criando o controller de produtos
-- [ ] Criando uma nova definição de tarefa do ECS para acessar o RDS
-- [ ] Testando o CRUD de produtos
+- [x] Configurando a aplicação para a acessar o banco de dados
+- [x] Criando o modelo de produtos
+- [x] Criando o repositório de produtos
+- [x] Criando o controller de produtos
+- [x] Criando uma nova definição de tarefa do ECS para acessar o RDS
+- [x] Testando o CRUD de produtos
 
 #### 12: Publicando eventos de produtos com o AWS SNS
 
