@@ -67,17 +67,17 @@
 
 #### 9: Monitorando o Application Load Balancer e seus componentes
 
-- [ ] Console do Application Load Balancer e suas métricas
-- [ ] Target Group e o health check
-- [ ] Security group e as regras de segurança
+- [x] Console do Application Load Balancer e suas métricas
+- [x] Target Group e o health check
+- [x] Security group e as regras de segurança
 
 #### 10: Como o funciona o processo de deployment de uma nova versão da aplicação
 
-- [ ] Preparando uma nova versão da aplicação
-- [ ] Nova revisão da definição da tarefa
-- [ ] Atualização do service com a nova revisão da tarefa
-- [ ] Monitoramento do target group das novas instâncias
-- [ ] Destruição das instâncias antigas
+- [x] Preparando uma nova versão da aplicação
+- [x] Nova revisão da definição da tarefa
+- [x] Atualização do service com a nova revisão da tarefa
+- [x] Monitoramento do target group das novas instâncias
+- [x] Destruição das instâncias antigas
 
 #### 11: Criação do CRUD de produtos utilizando AWS RDS com MySQL
 
