@@ -81,8 +81,8 @@
 
 #### 11: Criação do CRUD de produtos utilizando AWS RDS com MySQL
 
-- [ ] Arquitetura da aplicação com o AWS RDS
-- [ ] Criando a instância do RDS com AWS CDK
+- [x] Arquitetura da aplicação com o AWS RDS
+- [x] Criando a instância do RDS com AWS CDK
 - [ ] Configurando a aplicação para a acessar o banco de dados
 - [ ] Criando o modelo de produtos
 - [ ] Criando o repositório de produtos
