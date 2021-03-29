@@ -107,7 +107,7 @@
 
 - [x] Arquitetura da aplicação com AWS SQS
 - [x] Criando a nova fila e inscrevendo-a no tópico com o AWS CDK
-- [ ] Configurando a aplicação para acessar a nova fila
+- [x] Configurando a aplicação para acessar a nova fila
 - [ ] Criando os modelos que representam os eventos
 - [ ] Consumindo os eventos de produtos do AWS SQS com o JMS
 - [ ] Atribuindo a permissão à tarefa do ECS para acessar a fila através do AWS CDK
