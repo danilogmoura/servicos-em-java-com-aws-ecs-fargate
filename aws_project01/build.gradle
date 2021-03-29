@@ -55,12 +55,10 @@ docker {
 dependencies {
     compile 'com.amazonaws:aws-java-sdk-sns:1.11.887'
     compile 'org.mariadb.jdbc:mariadb-java-client:2.7.0'
-
     implementation 'com.github.javafaker:javafaker:1.0.2'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

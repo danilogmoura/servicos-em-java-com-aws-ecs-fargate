@@ -109,10 +109,10 @@
 - [x] Criando a nova fila e inscrevendo-a no tópico com o AWS CDK
 - [x] Configurando a aplicação para acessar a nova fila
 - [x] Criando os modelos que representam os eventos
-- [ ] Consumindo os eventos de produtos do AWS SQS com o JMS
-- [ ] Atribuindo a permissão à tarefa do ECS para acessar a fila através do AWS CDK
-- [ ] Testando o consumidor de eventos de produtos
-- [ ] Entendendo as métricas e gráficos do SQS
+- [x] Consumindo os eventos de produtos do AWS SQS com o JMS
+- [x] Atribuindo a permissão à tarefa do ECS para acessar a fila através do AWS CDK
+- [x] Testando o consumidor de eventos de produtos
+- [x] Entendendo as métricas e gráficos do SQS
 
 #### 15: Persistindo os eventos de produtos no DynamoDB
 

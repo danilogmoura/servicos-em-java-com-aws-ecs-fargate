@@ -19,6 +19,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
     id 'com.palantir.docker' version '0.22.1'
+    id "io.freefair.lombok" version "5.2.1"
 }
 
 group = 'danilogmoura'
@@ -29,7 +30,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation group: 'io.github.boostchicken', name: 'spring-data-dynamodb', version: '5.2.1'
-    implementation 'org.projectlombok:lombok:1.18.18'
     compile group: 'com.amazonaws', name: 'aws-java-sdk-sqs', version: '1.11.887'
     compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.887'
     compile group: 'org.springframework', name: 'spring-jms', version: '5.2.9.RELEASE'
@@ -39,7 +39,7 @@ dependencies {
 
 bootJar {
     baseName = 'curso_aws_project02'
-    version = '1.0.0'
+    version = '1.1.0'
     mainClassName = "com.dgm.aws_project02.AwsProject02Application"
 }
 
