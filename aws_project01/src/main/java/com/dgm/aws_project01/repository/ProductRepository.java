@@ -1,6 +1,6 @@
-package com.dgm.aws.aws_project01.repository;
+package com.dgm.aws_project01.repository;
 
-import com.dgm.aws.aws_project01.model.Product;
+import com.dgm.aws_project01.model.Product;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

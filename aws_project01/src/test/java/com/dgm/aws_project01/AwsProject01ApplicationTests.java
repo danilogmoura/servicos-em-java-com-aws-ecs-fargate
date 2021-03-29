@@ -1,4 +1,4 @@
-package com.dgm.aws.aws_project01;
+package com.dgm.aws_project01;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

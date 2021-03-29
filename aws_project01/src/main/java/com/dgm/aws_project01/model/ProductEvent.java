@@ -1,4 +1,4 @@
-package com.dgm.aws.aws_project01.model;
+package com.dgm.aws_project01.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

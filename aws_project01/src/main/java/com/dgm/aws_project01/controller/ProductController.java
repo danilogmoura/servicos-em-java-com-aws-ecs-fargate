@@ -1,8 +1,8 @@
-package com.dgm.aws.aws_project01.controller;
+package com.dgm.aws_project01.controller;
 
-import com.dgm.aws.aws_project01.model.Product;
-import com.dgm.aws.aws_project01.repository.ProductRepository;
-import com.dgm.aws.aws_project01.service.ProductPublisher;
+import com.dgm.aws_project01.model.Product;
+import com.dgm.aws_project01.repository.ProductRepository;
+import com.dgm.aws_project01.service.ProductPublisher;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-import static com.dgm.aws.aws_project01.enums.EventType.*;
+import static com.dgm.aws_project01.enums.EventType.*;
 import static org.springframework.http.HttpStatus.CREATED;
 
 @RestController

@@ -1,4 +1,4 @@
-package com.dgm.aws.aws_project01.config;
+package com.dgm.aws_project01.config;
 
 import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
 import com.amazonaws.services.sns.AmazonSNS;

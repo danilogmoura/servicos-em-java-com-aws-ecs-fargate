@@ -1,11 +1,12 @@
-package com.dgm.aws.aws_project01.service;
+package com.dgm.aws_project01.service;
 
 import com.amazonaws.services.sns.AmazonSNS;
+import com.amazonaws.services.sns.model.PublishResult;
 import com.amazonaws.services.sns.model.Topic;
-import com.dgm.aws.aws_project01.enums.EventType;
-import com.dgm.aws.aws_project01.model.Envelope;
-import com.dgm.aws.aws_project01.model.Product;
-import com.dgm.aws.aws_project01.model.ProductEvent;
+import com.dgm.aws_project01.enums.EventType;
+import com.dgm.aws_project01.model.Envelope;
+import com.dgm.aws_project01.model.Product;
+import com.dgm.aws_project01.model.ProductEvent;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -41,9 +42,14 @@ public class ProductPublisher {
         try {
             envelope.setData(objectMapper.writeValueAsString(productEvent));
 
-            snsClient.publish(
+            PublishResult publishResult = snsClient.publish(
                     productEventsTopic.getTopicArn(),
                     objectMapper.writeValueAsString(envelope));
+
+            log.info("Product event sent - Event: {} - ProductId: {} - MessageId: {}",
+                    envelope.getEventType(),
+                    productEvent.getProductId(),
+                    publishResult.getMessageId());
 
         } catch (JsonProcessingException e) {
             log.error("Failed to create product event message");

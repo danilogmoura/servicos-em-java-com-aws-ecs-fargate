@@ -1,4 +1,4 @@
-package com.dgm.aws.aws_project01.enums;
+package com.dgm.aws_project01.enums;
 
 public enum EventType {
     PRODUCT_CREATED,

@@ -1,6 +1,6 @@
-package com.dgm.aws.aws_project01.model;
+package com.dgm.aws_project01.model;
 
-import com.dgm.aws.aws_project01.enums.EventType;
+import com.dgm.aws_project01.enums.EventType;
 import lombok.Data;
 
 @Data

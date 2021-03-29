@@ -1,6 +1,6 @@
-package com.dgm.aws.aws_project01.controller;
+package com.dgm.aws_project01.controller;
 
-import com.dgm.aws.aws_project01.model.DogFood;
+import com.dgm.aws_project01.model.DogFood;
 import com.github.javafaker.Faker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
