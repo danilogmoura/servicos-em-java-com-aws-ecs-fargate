@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Product1\",\r\n    \"model\": \"Model1\",\r\n    \"code\": \"COD100\",\r\n    \"price\": 10.0,\r\n    \"color\": \"black\"\r\n}",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Carro\",\r\n    \"model\": \"Model1\",\r\n    \"code\": \"COD999\",\r\n    \"price\": 10.0,\r\n    \"color\": \"black\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -121,6 +121,48 @@
 						""
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "Protocolo-modelo-1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": 1,\r\n    \"code\": \"COD1\",\r\n    \"username\": \"matilde\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Protocolo-modelo-1 Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventType\": \"PRODUCT_CREATED\",\r\n    \"data\": \"{\\\"productId\\\": 1,\\\"code\\\": \\\"COD1\\\",\\\"username\\\": \\\"matilde\\\"}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": null
 			},
 			"response": []
 		}

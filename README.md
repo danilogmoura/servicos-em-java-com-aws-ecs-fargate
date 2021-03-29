@@ -96,7 +96,7 @@
 - [x] Criando os modelos para representar os eventos
 - [x] Criando o serviço para publicar eventos no AWS SNS
 - [x] Atribuindo a permissão à tarefa do ECS para acessar o SNS
-- [ ] Testando o envio de notificações pelo AWS SNS
+- [x] Testando o envio de notificações pelo AWS SNS
 
 #### 13: Criando a aplicação para consumir os eventos de produtos
 
