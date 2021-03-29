@@ -120,9 +120,9 @@
 - [x] Criando a tabela no DynamoDB com AWS CDK
 - [x] Configurando a aplicação para acessar a tabela no DynamoDB
 - [x] Criando o modelo de evento de produto
-- [ ] Criando o repositório de evento de produto
-- [ ] Persistindo os eventos de produtos
-- [ ] Atribuindo a permissão à tarefa do ECS para acessar a tabela do DynamoDB
+- [x] Criando o repositório de evento de produto
+- [x] Persistindo os eventos de produtos
+- [x] Atribuindo a permissão à tarefa do ECS para acessar a tabela do DynamoDB
 - [ ] Visualizando os eventos de produtos no console do DynamoDB
 - [ ] Entendendo as métricas e gráficos do DynamoDB
 

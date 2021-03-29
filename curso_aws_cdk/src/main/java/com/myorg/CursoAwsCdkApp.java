@@ -24,7 +24,7 @@ public class CursoAwsCdkApp {
         DdbStack ddbStack = new DdbStack(app, "Ddb");
 
         Service02Stack service02Stack = new Service02Stack(app, "Service02",
-                clusterStack.getCluster(), snsStack.getProductEventsTopic());
+                clusterStack.getCluster(), snsStack.getProductEventsTopic(), ddbStack.getProductEventsDdb());
         service02Stack.addDependency(clusterStack);
         service02Stack.addDependency(snsStack);
         service02Stack.addDependency(ddbStack);
