@@ -94,7 +94,7 @@
 - [x] Criando o tópico do SNS com AWS CDK
 - [x] Configurando a aplicação para acessar o novo tópico
 - [x] Criando os modelos para representar os eventos
-- [ ] Criando o serviço para publicar eventos no AWS SNS
+- [x] Criando o serviço para publicar eventos no AWS SNS
 - [ ] Atribuindo a permissão à tarefa do ECS para acessar o SNS
 - [ ] Testando o envio de notificações pelo AWS SNS
 
