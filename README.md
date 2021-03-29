@@ -116,8 +116,8 @@
 
 #### 15: Persistindo os eventos de produtos no DynamoDB
 
-- [ ] Arquitetura da aplicação com AWS DynamoDB
-- [ ] Criando a tabela no DynamoDB com AWS CDK
+- [x] Arquitetura da aplicação com AWS DynamoDB
+- [x] Criando a tabela no DynamoDB com AWS CDK
 - [ ] Configurando a aplicação para acessar a tabela no DynamoDB
 - [ ] Criando o modelo de evento de produto
 - [ ] Criando o repositório de evento de produto
