@@ -29,6 +29,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation group: 'io.github.boostchicken', name: 'spring-data-dynamodb', version: '5.2.1'
+    implementation 'org.projectlombok:lombok:1.18.18'
     compile group: 'com.amazonaws', name: 'aws-java-sdk-sqs', version: '1.11.887'
     compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.887'
     compile group: 'org.springframework', name: 'spring-jms', version: '5.2.9.RELEASE'
