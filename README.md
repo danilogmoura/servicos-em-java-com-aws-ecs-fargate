@@ -123,14 +123,14 @@
 - [x] Criando o repositório de evento de produto
 - [x] Persistindo os eventos de produtos
 - [x] Atribuindo a permissão à tarefa do ECS para acessar a tabela do DynamoDB
-- [ ] Visualizando os eventos de produtos no console do DynamoDB
-- [ ] Entendendo as métricas e gráficos do DynamoDB
+- [X] Visualizando os eventos de produtos no console do DynamoDB
+- [X] Entendendo as métricas e gráficos do DynamoDB
 
 #### 16: Criando um controller para buscar os eventos de produtos
 
-- [ ] Criando o novo controller
-- [ ] Buscando eventos pelo código do produto e tipo do evento
-- [ ] Testando o novo controller com o Postman
+- [x] Criando o novo controller
+- [x] Buscando eventos pelo código do produto e tipo do evento
+- [x] Testando o novo controller com o Postman
 
 #### 17: Preparando para os testes de carga
 

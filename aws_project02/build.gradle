@@ -41,7 +41,7 @@ dependencies {
 
 bootJar {
     baseName = 'curso_aws_project02'
-    version = '1.2.0'
+    version = '1.4.0'
     mainClassName = "com.dgm.aws_project02.AwsProject02Application"
 }
 

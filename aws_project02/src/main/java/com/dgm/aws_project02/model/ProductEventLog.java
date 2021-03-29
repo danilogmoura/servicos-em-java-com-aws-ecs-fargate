@@ -26,6 +26,9 @@ public class ProductEventLog {
     @DynamoDBAttribute(attributeName = "username")
     private String username;
 
+    @DynamoDBAttribute(attributeName = "messageId")
+    private String messageId;
+
     @DynamoDBAttribute(attributeName = "timestamp")
     private long timestamp;
 
