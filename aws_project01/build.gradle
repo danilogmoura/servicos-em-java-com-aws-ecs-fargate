@@ -36,6 +36,7 @@ repositories {
 bootJar {
     baseName('curso_aws_project01')
     version('1.3.0')
+    mainClassName = "com.dgm.aws.aws_project01.AwsProject01Application"
 }
 
 task unpack(type: Copy) {

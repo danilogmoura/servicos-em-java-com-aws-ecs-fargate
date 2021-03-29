@@ -23,13 +23,13 @@ public class Service02Stack extends Stack {
         Map<String, String> envVariables = new HashMap<>();
         envVariables.put("AWS_REGION", "us-east-1");
 
-        ApplicationLoadBalancedFargateService service01 = ApplicationLoadBalancedFargateService.Builder.create(this, "ALB02")
+        ApplicationLoadBalancedFargateService service02 = ApplicationLoadBalancedFargateService.Builder.create(this, "ALB02")
                 .serviceName("service-02")
                 .cluster(cluster)
                 .cpu(512)
                 .memoryLimitMiB(1024)
                 .desiredCount(2)
-                .listenerPort(8080)
+                .listenerPort(9090)
                 .taskImageOptions(
                         ApplicationLoadBalancedTaskImageOptions.builder()
                                 .containerName("aws_project02")
@@ -47,13 +47,13 @@ public class Service02Stack extends Stack {
                 .publicLoadBalancer(true)
                 .build();
 
-        service01.getTargetGroup().configureHealthCheck(new HealthCheck.Builder()
+        service02.getTargetGroup().configureHealthCheck(new HealthCheck.Builder()
                 .path("/actuator/health")
-                .port("8080")
+                .port("9090")
                 .healthyHttpCodes("200")
                 .build());
 
-        ScalableTaskCount scalableTaskCount = service01.getService().autoScaleTaskCount(EnableScalingProps.builder()
+        ScalableTaskCount scalableTaskCount = service02.getService().autoScaleTaskCount(EnableScalingProps.builder()
                 .minCapacity(2)
                 .maxCapacity(4)
                 .build());

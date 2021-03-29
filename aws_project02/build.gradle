@@ -1,12 +1,11 @@
 buildscript {
     ext {
-        springBootVersion = '2.4.4'
+        springBootVersion = '2.4.0'
     }
-
     repositories {
         mavenCentral()
         maven {
-            url 'https://plugins.gradle.org/m2/'
+            url "https://plugins.gradle.org/m2/"
         }
     }
     dependencies {
@@ -16,26 +15,34 @@ buildscript {
 }
 
 plugins {
-    id 'org.springframework.boot' version '2.4.4'
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'org.springframework.boot' version '2.4.0'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
     id 'com.palantir.docker' version '0.22.1'
-    id "io.freefair.lombok" version "5.2.1"
 }
 
 group = 'danilogmoura'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '15'
 
-repositories {
-    mavenCentral()
-    maven { url 'https://repo.spring.io/milestone' }
-    maven { url 'https://repo.spring.io/snapshot' }
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-sqs', version: '1.11.887'
+    compile group: 'org.springframework', name: 'spring-jms', version: '5.2.9.RELEASE'
+    compile group: 'com.amazonaws', name: 'amazon-sqs-java-messaging-lib', version: '1.0.8'
+
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.887'
+    implementation group: 'io.github.boostchicken', name: 'spring-data-dynamodb', version: '5.2.1'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 bootJar {
-    baseName('curso_aws_project02')
-    version('1.0.0')
+    baseName = 'curso_aws_project02'
+    version = '1.0.0'
+    mainClassName = "com.dgm.aws_project02.AwsProject02Application"
 }
 
 task unpack(type: Copy) {
@@ -43,24 +50,15 @@ task unpack(type: Copy) {
     from(zipTree(tasks.bootJar.outputs.files.singleFile))
     into("build/dependency")
 }
-
 docker {
     name "${project.group}/${bootJar.baseName}"
     tags "${bootJar.version}"
     copySpec.from(tasks.unpack.outputs).into("dependency")
-    buildArgs(['DEPENDENCY': 'dependency'])
+    buildArgs(['DEPENDENCY': "dependency"])
 }
 
-dependencies {
-    compile 'com.amazonaws:aws-java-sdk-sns:1.11.887'
-    compile 'org.mariadb.jdbc:mariadb-java-client:2.7.0'
-
-    implementation 'com.github.javafaker:javafaker:1.0.2'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
-
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+repositories {
+    mavenCentral()
 }
 
 test {

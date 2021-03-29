@@ -1,4 +1,4 @@
-package com.dgm.aws.aws_project02;
+package com.dgm.aws_project02;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class AwsProject02Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AwsProject02Application.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(AwsProject02Application.class, args);
+    }
 }
