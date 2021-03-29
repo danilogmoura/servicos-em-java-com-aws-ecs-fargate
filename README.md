@@ -100,8 +100,8 @@
 
 #### 13: Criando a aplicação para consumir os eventos de produtos
 
-- [ ] Arquitetura da nova aplicação
-- [ ] Verificando a infraestrutura da aplicação
+- [x] Arquitetura da nova aplicação
+- [x] Verificando a infraestrutura da aplicação
 
 #### 14: Consumindo os eventos de produtos com AWS SQS
 
