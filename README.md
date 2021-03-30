@@ -134,10 +134,10 @@
 
 #### 17: Preparando para os testes de carga
 
-- [ ] Criando a coleção no Postman
-- [ ] Executando o teste de carga
-- [ ] Verificando os gráficos de consumo de recursos
-- [ ] Analisando os gráficos do DynamoDB
+- [x] Criando a coleção no Postman
+- [x] Executando o teste de carga
+- [x] Verificando os gráficos de consumo de recursos
+- [x] Analisando os gráficos do DynamoDB
 
 #### 18: Configurando o autoscaling da tabela do DynamoDB com AWS CDK
 
